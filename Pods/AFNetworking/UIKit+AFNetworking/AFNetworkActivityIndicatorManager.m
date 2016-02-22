@@ -32,7 +32,7 @@
 static NSTimeInterval const kAFNetworkActivityIndicatorInvisibilityDelay = 0.17;
 
 static NSURLRequest * AFNetworkRequestFromNotification(NSNotification *notification) {
-    if ([[notification object] isKindOfClass:[AFURLConnectionOperation class]]) {
+    if ([[notification object] isKindOfClass:[	AFURLConnectionOperation class]]) {
         return [(AFURLConnectionOperation *)[notification object] request];
     }
 
